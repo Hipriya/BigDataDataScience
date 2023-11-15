@@ -1,0 +1,49 @@
+A few days back one of my friends who is a Software Engineer by profession asked me a very intuitive and interesting question. 
+
+Oh, Ankur for the last few years I have seen you that you are involved in streaming data & and making real-time big data pipelines but what do you do after streaming the data? 
+
+I laughed for a few seconds and had a great convo about streaming benefits 😄 Benefits of having some geeky friends 😂
+
+Let's explore what we can do with a stream. In general, we can process it and there are mainly three use cases of realtime streaming projects.
+
+1. You can take the streaming data in the event and store it in a database🗄️, cache, search index or any other similar storage system, from where it can be queried by other clients.
+
+2. Second, you can send the events to the user in various ways, such as 📧 email, 🔔 push notifications or 📈 real-time dashboard streaming. This way, a person can be the ultimate consumer of the stream
+
+3. Third, you can process one or more input streams to produce one or more output streams. These streams can go through a pipeline consisting of several processing stages before they eventually become output(option 1️⃣ or 2️⃣)
+
+For processing real-time streams of data, a Data Engineer typically handles the following tasks among the options mentioned above
+
+𝗘𝘃𝗲𝗻𝘁 𝗧𝗶𝗺𝗲 𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗶𝗻𝗴:
+
+a). Timestamp Extraction 
+
+Extract timestamps from the incoming data to understand when events occurred.
+
+b). Out-of-Order Handling
+
+Implement mechanisms to handle events that arrive out of order by reordering them based on their timestamps.
+
+𝗪𝗶𝗻𝗱𝗼𝘄𝗶𝗻𝗴 𝗮𝗻𝗱 𝗧𝗶𝗺𝗲-𝗯𝗮𝘀𝗲𝗱 𝗢𝗽𝗲𝗿𝗮𝘁𝗶𝗼𝗻𝘀:
+
+a). Define Windows
+
+Group streaming data into time-based windows (e.g., tumbling, hopping, sliding, or session windows).
+
+b). Aggregate Operations
+
+Calculate aggregates (sums, averages, counts) over defined time windows to derive meaningful insights.
+
+𝗝𝗼𝗶𝗻𝗶𝗻𝗴 𝗦𝘁𝗿𝗲𝗮𝗺𝘀:
+
+a). Stream Join Operations
+
+Joining events and enriching data in streaming is a complex task for data engineers. 🤯 There are various types of joins available, including stream-stream join (window join), stream-table join (stream enrichment), and table-table join (materialized view maintenance). To ensure a bug-free project, it is crucial to have a clear understanding of the time dependence🕰️ of these joins
+
+𝗜𝗻𝘁𝗲𝗴𝗿𝗮𝘁𝗶𝗼𝗻 𝘄𝗶𝘁𝗵 𝗗𝗼𝘄𝗻𝘀𝘁𝗿𝗲𝗮𝗺 𝗦𝘆𝘀𝘁𝗲𝗺𝘀
+
+Data needs processing and enrichment before being sent to downstream systems like dashboards or reporting tools. Integration with databases, data warehousing or data lakes may be required. A Data Engineer might need to create APIs, connectors or real-time APIs to expose the processed stream event.
+
+There are other works too like Data Ingestion, Scalability, Fault Tolerance, Monitoring, Maintenance, Security etc.
+
+I hope you now understand the need for a real-time streaming pipeline. 
